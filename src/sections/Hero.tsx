@@ -1,11 +1,23 @@
 import Image from "next/image";
 import loaiMemoji from "@/assets/images/loai-memoji.png";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
+import grainImage from "@/assets/images/grain.jpg";
+import { Grandiflora_One } from "next/font/google";
 
 export const HeroSection = () => {
 	return (
-		<div className="py-32 md:py-48 lg:py-55">
-			<div className="container ">
+		<div className="py-32 md:py-48 lg:py-55 relative z-0 overflow-x-clip">
+			<div
+				className="absolute inset-0 -z-30 opacity-5"
+				style={{
+					backgroundImage: `url(${grainImage.src})`,
+				}}
+			></div>
+			<div className={"size-[620px] hero-ring"}></div>
+			<div className={"size-[820px] hero-ring"}></div>
+			<div className={"size-[1020px] hero-ring"}></div>
+			<div className={"size-[1220px] hero-ring"}></div>
+			<div className="container">
 				<div className="flex flex-col items-center">
 					<Image src={loaiMemoji} alt="My memoji" className="size-[100px]" />
 					<div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
