@@ -53,8 +53,8 @@ export const HeroSection = () => {
 			</div>
 			<div className="container">
 				<div className="flex flex-col items-center">
-					<Image src={loaiMemoji} alt="My memoji" className="size-[100px]" />
-					<div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+					<Image src={loaiMemoji} alt="My memoji" className="size-[120px]" />
+					<div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg ">
 						<div className="bg-green-500 size-2.5 rounded-full"></div>
 						<div className="text-sm font-meduim">
 							Available for new projects
@@ -62,13 +62,16 @@ export const HeroSection = () => {
 					</div>
 				</div>
 				<div className="max-w-lg mx-auto">
-					<h1 className="font-serif text-3xl md:text-5xl text-center mt-8 font-semibold tracking-wide">
-						Building Exeptional User Experiences
+					<h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+						<span>Loai Rebouh</span>
+						<br />
+						<span>Full Stack Developer</span>
 					</h1>
-					<p className="!font-sans mt-4 text-center text-white/60 md:text-lg">
-						I design and transform concepts into reality, whether for websites
-						or real business projects. My focus is on creating high-performing
-						solutions that are both visually appealing and functional
+					<p className="font-sans mt-4 text-center text-white/60 md:text-lg">
+						I'm a full-stack web developer and entrepreneur, owning an
+						e-commerce project for selling decoration and Qotra Development
+						Company. I help business owners grow and enhance the aesthetics of
+						their businesses
 					</p>
 				</div>
 				<div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
