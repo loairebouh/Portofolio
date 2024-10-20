@@ -5,6 +5,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckBox from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
+import GrainImage from "@/assets/images/grain.jpg";
 
 const portfolioProjects = [
 	{
@@ -47,7 +48,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
 	return (
-		<div>
+		<section className="pb-16">
 			<div className="container">
 				<div className="flex justify-center ">
 					<p className="uppercase font-semibold tracking-widset bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
@@ -62,18 +63,22 @@ export const ProjectsSection = () => {
 					See how I turn ideas into captivating and functional digital
 					experiences
 				</p>
-				<div className="flex flex-col mt-10">
+				<div className="flex flex-col mt-10 gap-20">
 					{portfolioProjects.map((project) => (
 						<div
 							key={project.title}
-							className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:-z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 p-8"
+							className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:-z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 after:pointer-events-none"
 						>
-							<div className="flex">
-								<div className="bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent inline-flex gap-2 font-bold uppercase tracking-widest text-sm ">
-									<span>{project.company}</span>
-									<span>&bull;</span>
-									<span>{project.year}</span>
-								</div>
+							<div
+								className="absolute inset-0 -z-10 opacity-5"
+								style={{
+									backgroundImage: `url(${GrainImage.src})`,
+								}}
+							></div>
+							<div className="bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent inline-flex gap-2 font-bold uppercase tracking-widest text-sm ">
+								<span>{project.company}</span>
+								<span>&bull;</span>
+								<span>{project.year}</span>
 							</div>
 							<h3 className="font-serif text-2xl">{project.title}</h3>
 							<hr className="border-t-2 border-white/5 mt-2" />
@@ -94,11 +99,15 @@ export const ProjectsSection = () => {
 									<span>View Live Project</span>
 								</button>
 							</a>
-							<Image src={project.image} alt={project.title} className="mt-8" />
+							<Image
+								src={project.image}
+								alt={project.title}
+								className="mt-8 -mb-4"
+							/>
 						</div>
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
