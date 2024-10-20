@@ -22,17 +22,14 @@ const Skills = [
 export const TapeSection = () => {
 	return (
 		<div>
-			<div>
+			<div className="flex flex-col items-center">
 				<p className="uppercase font-semibold tracking-widset bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
 					What can i do
 				</p>
 				<div className="font-serif text-3xl md:text-5xl text-center mt-6">
 					My Skills
 				</div>
-				<p
-					className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md sm:mx-10 
-        lg:mx-auto md:mx-auto"
-				>
+				<p className="text-center   md:text-lg lg:text-xl text-white/60 mt-4 max-w-md sm:mx-10 lg:mx-auto md:mx-10">
 					Bringing innovative solutions to life with versatile skills, crafting
 					each project with creativity, precision, and a focus on results
 				</p>
