@@ -4,35 +4,37 @@ import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import yasserPic from "@/assets/images/yasser-moula.png";
-import ayodaPic from "@/assets/images/abdallah-mehiz.png";
+import ayodaPic from "@/assets/images/ayoda.png";
+import catFatherPic from "@/assets/images/cat-father.png";
+import mouadhHarounPic from "@/assets/images/mouadh-haroun.png";
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
 const testimonials = [
 	{
-		name: "Yasser Moula",
-		position: "E-com Owner @ Ys Shop",
-		text: "All the technical aspects of my business, Ys Shop, rely on Loai. He’s incredibly helpful and always provides valuable advice while ensuring the job is done efficiently. His attention to detail and deep understanding of our brand are outstanding. We're absolutely delighted with the results!",
-		avatar: yasserPic,
+		name: "Mouadh Haroun Abdallah",
+		position: "Perfumes Collector & Seller @Morphumes",
+		text: "Loai is one of the most professional persons I have ever met. The perfection he seeks in his business is incredibly impressive.Loai helps the client decide what's best for his project; he helps with everything he is able to.He is honest, reliable, strict about his deadlines, serious, and the real meaning of perfectionist.All the pleasure is mine.",
+		avatar: mouadhHarounPic,
+	},
+	{
+		name: "Cat Father Dz",
+		position: "Owner of @Cat_father_dz",
+		text: "This is my first time I work with Loai , His work is professional except organizing time but I'm still proud of his work , and he is a good and disciplined person. I recommend.",
+		avatar: catFatherPic,
 	},
 	{
 		name: "Abdallah Mehiz",
-		position: "CEO & Mobile Dev @ Qotra",
+		position: "CEO & Mobile Dev @Qotra",
 		text: "A Great dev in the making You're on an impressive path! Your work as a developer and your eye for design are coming together in a powerful way. Keep it up!",
 		avatar: ayodaPic,
 	},
 	{
-		name: "Bassem Djeddi",
-		position: "Merchant @ DjeddiFurniture",
-		text: "",
-		avatar: memojiAvatar3,
-	},
-	{
-		name: "Emily Carter",
-		position: "Product Manager @ GlobalTech",
-		text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-		avatar: memojiAvatar4,
+		name: "Yasser Moula",
+		position: "E-com Owner @YsShop",
+		text: "All the technical aspects of my business, Ys Shop, rely on Loai. He’s incredibly helpful and always provides valuable advice while ensuring the job is done efficiently. His attention to detail and deep understanding of our brand are outstanding. We're absolutely delighted with the results!",
+		avatar: yasserPic,
 	},
 	{
 		name: "Michael Brown",
