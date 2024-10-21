@@ -1,6 +1,6 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
-import Image from "next/image";
+
 export const ContactSection = () => {
 	return (
 		<div className="py-16 pt-12 lg:py-24">
@@ -14,11 +14,11 @@ export const ContactSection = () => {
 					></div>
 					<div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
 						<div>
-							<h2 className="font-serif text-2xl md:text-3xl m">
-								Let's create something amzaing together
+							<h2 className="font-serif text-2xl md:text-3xl">
+								Let&apos;s create something amzaing together
 							</h2>
 							<p className="text-sm md:text-base mt-2">
-								Ready to bring your next project to life? Let's connect and
+								Ready to bring your next project to life? Let&apos;s connect and
 								discuss how i can help you to acheive your goals.
 							</p>
 						</div>
