@@ -10,9 +10,9 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
 	{
-		company: "Acme Corp",
-		year: "2022",
-		title: "Dark Saas Landing Page",
+		company: "E COM",
+		year: "2024",
+		title: "Ys Shop Wesbite",
 		results: [
 			{ title: "Enhanced user experience by 40%" },
 			{ title: "Improved site speed by 50%" },
