@@ -2,6 +2,7 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import qotraWebPage from "@/assets/images/qotraimage.png";
 import Image from "next/image";
 import CheckBox from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
@@ -22,19 +23,19 @@ const portfolioProjects = [
 		image: darkSaasLandingPage,
 	},
 	{
-		company: "Innovative Co",
-		year: "2021",
-		title: "Light Saas Landing Page",
+		company: "Qotra",
+		year: "2024",
+		title: "Main website of Qotra's co",
 		results: [
-			{ title: "Boosted sales by 20%" },
+			{ title: "Enhanced user experience by 10%" },
 			{ title: "Expanded customer reach by 35%" },
 			{ title: "Increased brand awareness by 15%" },
 		],
-		link: "https://youtu.be/7hi5zwO75yc",
-		image: lightSaasLandingPage,
+		link: "https://qotra.dev",
+		image: qotraWebPage,
 	},
 	{
-		company: "Quantum Dynamics",
+		company: "Nexa",
 		year: "2023",
 		title: "AI Startup Landing Page",
 		results: [
