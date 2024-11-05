@@ -3,6 +3,7 @@ import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import qotraWebPage from "@/assets/images/qotraimage.png";
+import nexaWebPage from "@/assets/images/nexadecopage.png";
 import Image from "next/image";
 import CheckBox from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
@@ -36,15 +37,15 @@ const portfolioProjects = [
 	},
 	{
 		company: "Nexa",
-		year: "2023",
-		title: "AI Startup Landing Page",
+		year: "2021",
+		title: "Decoration Online Startup",
 		results: [
-			{ title: "Enhanced user experience by 40%" },
-			{ title: "Improved site speed by 50%" },
+			{ title: "Enhanced decoraton experience in algeria" },
+			{ title: "Improved brand reach by 50%" },
 			{ title: "Increased mobile traffic by 35%" },
 		],
-		link: "https://youtu.be/Z7I5uSRHMHg",
-		image: aiStartupLandingPage,
+		link: "https://nexa-deco.com",
+		image: nexaWebPage,
 	},
 ];
 
