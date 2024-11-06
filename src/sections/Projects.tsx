@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-key */
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import ysShopWebsite from "@/assets/images/ys-shop.png";
+import nexaUi from "@/assets/images/nexadecopage.png";
 import qotraWebPage from "@/assets/images/qotraimage.png";
 import nexaWebPage from "@/assets/images/nexadecopage.png";
 import Image from "next/image";
@@ -20,8 +19,8 @@ const portfolioProjects = [
 			{ title: "Improved site speed by 50%" },
 			{ title: "Increased mobile traffic by 35%" },
 		],
-		link: "https://youtu.be/4k7IdSLxh6w",
-		image: darkSaasLandingPage,
+		link: "https://ys-shop.org",
+		image: ysShopWebsite,
 	},
 	{
 		company: "Qotra",

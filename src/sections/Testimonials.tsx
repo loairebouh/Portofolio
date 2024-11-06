@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
 import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
@@ -7,9 +8,11 @@ import yasserPic from "@/assets/images/yasser-moula.png";
 import ayodaPic from "@/assets/images/ayoda.png";
 import catFatherPic from "@/assets/images/cat-father.png";
 import mouadhHarounPic from "@/assets/images/mouadh-haroun.png";
+import khalidAlMansoriPic from "@/assets/images/khalid-mansouri.png";
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import { Fragment } from "react";
 
 const testimonials = [
 	{
@@ -37,10 +40,10 @@ const testimonials = [
 		avatar: yasserPic,
 	},
 	{
-		name: "Michael Brown",
-		position: "Director of IT @ MegaCorp",
-		text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-		avatar: memojiAvatar5,
+		name: "Khalid Al-Mansouri",
+		position: "Lead Software Engineer @InnovaTech",
+		text: "Loai, your growth has been inspiring to watch! Your dedication to honing your skills and your innovative approach to problem-solving are setting you on a path to greatness. The progress you’ve made is impressive, and I can see how much passion you put into your work. Keep pushing forward—your efforts are truly making a difference, and I’m excited to see what you achieve next!",
+		avatar: khalidAlMansoriPic,
 	},
 ];
 
@@ -54,37 +57,45 @@ export const TestimonialsSection = () => {
 					descreption="Dont just take my word for it, See what my clients have to say about my
 				work"
 				/>
-				<div className="mt-16 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+				<div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
 					<div className="flex gap-8 flex-none">
-						{testimonials.map((testimonial) => (
-							<Card
-								key={testimonial.name}
-								className="max-w-xs p-6 md:max-w-md md:p-8"
-							>
-								<div className="flex gap-4 items-center">
-									<div
-										className={
-											"size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0"
-										}
-									>
-										<Image
-											src={testimonial.avatar}
-											alt="client pic"
-											className={"mt-5"}
-										/>
-									</div>
-									<div className="">
-										<div className={"font-semibold"}>{testimonial.name}</div>
-										<div className={"text-sm text-white/40"}>
-											{testimonial.position}
-										</div>
-									</div>
-								</div>
-								<p className={"mt-4 text-sm md:text-base "}>
-									{testimonial.text}
-								</p>
-							</Card>
-						))}
+						<div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:60s] hover:[animation-play-state:paused]">
+							{[...new Array(2)].fill(0).map((_, idx) => (
+								<Fragment>
+									{testimonials.map((testimonial) => (
+										<Card
+											key={testimonial.name}
+											className="max-w-xs p-6 md:max-w-md md:p-8 hover:-rotate-3 transition duration-300"
+										>
+											<div className="flex gap-4 items-center">
+												<div
+													className={
+														"size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0"
+													}
+												>
+													<Image
+														src={testimonial.avatar}
+														alt="client pic"
+														className={"mt-5"}
+													/>
+												</div>
+												<div className="">
+													<div className={"font-semibold"}>
+														{testimonial.name}
+													</div>
+													<div className={"text-sm text-white/40"}>
+														{testimonial.position}
+													</div>
+												</div>
+											</div>
+											<p className={"mt-4 text-sm md:text-base "}>
+												{testimonial.text}
+											</p>
+										</Card>
+									))}
+								</Fragment>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
