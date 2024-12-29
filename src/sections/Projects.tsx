@@ -3,13 +3,51 @@ import ysShopWebsite from "@/assets/images/ys-shop.png";
 import nexaUi from "@/assets/images/nexadecopage.png";
 import qotraWebPage from "@/assets/images/qotraimage.png";
 import nexaWebPage from "@/assets/images/nexadecopage.png";
+import nawaWebPage from "@/assets/images/nawabiopage.png";
+import nicheDzWebPage from "@/assets/images/nichedzpage.png";
+import sumbulahUI from "@/assets/images/sumbulahui.png";
 import Image from "next/image";
 import CheckBox from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
 import { Card } from "@/components/Card";
+import { Result } from "postcss";
+import { link } from "fs";
+import { image } from "framer-motion/client";
 
 const portfolioProjects = [
+	{
+		company: "SARL INOVA PALM",
+		year: "2024",
+		title: "Code & Designe a new website for Nawa",
+		results: [
+			{ title: "Increase Visual Presence by 100‰" },
+			{ title: "International Reach by 50%" },
+			{ title: "Mobile Traffic by 35%" },
+		],
+		link: "https://nawa.bio",
+		image: nawaWebPage,
+	},
+	{
+		company: "Niche DZ",
+		year: "2024",
+		title: "Niche DZ Website",
+		results: [
+			{ title: "Enhanced user experience by 40%" },
+			{ title: "Improved site speed by 50%" },
+			{ title: "Increased mobile traffic by 35%" },
+		],
+		link: "https://niche-dz.com",
+		image: nicheDzWebPage,
+	},
+	{
+		company: "Sumbulah",
+		year: "2024",
+		title: "Sumbulah Mobile APP",
+		results: [{ title: "Enhanced user interface by 40%" }],
+		link: "https://www.figma.com/proto/ZsGYZppvybtyqFZShKJaHB/Sumbulah?page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&t=oidZIgPMoFCYeYNw-1",
+		image: sumbulahUI,
+	},
 	{
 		company: "E COM",
 		year: "2024",
@@ -97,7 +135,7 @@ export const ProjectsSection = () => {
 										))}
 									</ul>
 									<a href={project.link}>
-										<button className="bg-white text-gray-950 h-12 w-full md:w-auto      md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+										<button className="bg-white text-gray-950 h-12 w-full md:w-auto md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
 											<ArrowUpRight className="size-4" />
 											<span>View Live Project</span>
 										</button>
@@ -107,7 +145,7 @@ export const ProjectsSection = () => {
 									<Image
 										src={project.image}
 										alt={project.title}
-										className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full  lg:max-w-none lg:w-auto"
+										className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:max-w-none lg:w-auto"
 									/>
 								</div>
 							</div>
