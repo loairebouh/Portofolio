@@ -5,7 +5,7 @@ import qotraWebPage from "@/assets/images/qotraimage.png";
 import nexaWebPage from "@/assets/images/nexadecopage.png";
 import nawaWebPage from "@/assets/images/nawabiopage.png";
 import nicheDzWebPage from "@/assets/images/nichedzpage.png";
-import sumbulahUI from "@/assets/images/sumbulahui.png";
+import sumbulahUI from "@/assets/images/sumbulahUI.png";
 import Image from "next/image";
 import CheckBox from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
